@@ -1,0 +1,105 @@
+{
+  "uuid": "4f470126-7f52-4dc2-9ad7-dc62975e38fc",
+  "name": "example to demostrate file upload",
+  "historyId": "4ed0a2184f7ff8789ce3448f6a002b49:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "input[type='file']" }],
+      "start": 1730971100863,
+      "name": "Command \"get\"",
+      "stop": 1730971098657
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "screenshot.png" }],
+      "start": 1730971100863,
+      "name": "Command \"attachFile\"",
+      "stop": 1730971098658
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "screenshot.png" },
+        { "name": "Argument [1]", "value": "base64" }
+      ],
+      "start": 1730971100863,
+      "name": "Command \"fixture\"",
+      "stop": 1730971098669
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "#file-submit" }],
+      "start": 1730971100863,
+      "name": "Command \"get\"",
+      "stop": 1730971098680
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1730971100863,
+      "name": "Command \"click\"",
+      "stop": 1730971098773
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "#uploaded-files" }],
+      "start": 1730971100863,
+      "name": "Command \"get\"",
+      "stop": 1730971100852
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "screenshot.png" }],
+      "start": 1730971100863,
+      "name": "Command \"contains\"",
+      "stop": 1730971100856
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cypress" },
+    { "name": "parentSuite", "value": "cypress file upload" },
+    { "name": "host", "value": "ASCINLAP60851" },
+    { "name": "thread", "value": "pid-40236-worker-main" },
+    { "name": "package", "value": "cypress.e2e.upload.cy.js" }
+  ],
+  "links": [],
+  "start": 1730971093878,
+  "fullName": "cypress/e2e/upload.cy.js#cypress file upload example to demostrate file upload",
+  "testCaseId": "4ed0a2184f7ff8789ce3448f6a002b49",
+  "stop": 1730971100856
+}

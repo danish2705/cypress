@@ -1,0 +1,76 @@
+{
+  "uuid": "2ab19f18-ddab-4a3a-ab8f-f5fd6e43ccb0",
+  "name": "Link Testing - Community",
+  "historyId": "ccfe085197b9f51f1d126644843c4f04:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Timed out retrying after 4000ms: expected '' to equal 'https://discord.com/invite/3MdvPfT'",
+    "trace": "AssertionError: Timed out retrying after 4000ms: expected '' to equal 'https://discord.com/invite/3MdvPfT'\n    at Context.eval (webpack://cy/./cypress/e2e/asser3.cy.js:65:13)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "Community" }],
+      "start": 1730970985035,
+      "name": "Command \"contains\"",
+      "stop": 1730970971233
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1730970985035,
+      "name": "Command \"click\"",
+      "stop": 1730970971327
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "1000" }],
+      "start": 1730970985035,
+      "name": "Command \"wait\"",
+      "stop": 1730970980693
+    },
+    {
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Screenshot",
+          "source": "114f3204-28ae-4e1f-ba28-f13c88d7a33d-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1730970985035,
+      "name": "Command \"url\""
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cypress" },
+    { "name": "parentSuite", "value": "template spec" },
+    { "name": "host", "value": "ASCINLAP60851" },
+    { "name": "thread", "value": "pid-40236-worker-main" },
+    { "name": "package", "value": "cypress.e2e.asser3.cy.js" }
+  ],
+  "links": [],
+  "start": 1730970970966,
+  "fullName": "cypress/e2e/asser3.cy.js#template spec Link Testing - Community",
+  "testCaseId": "ccfe085197b9f51f1d126644843c4f04",
+  "stop": 1730970984986
+}

@@ -1,0 +1,52 @@
+{
+  "uuid": "f8125c74-89e6-4992-a364-061c9d32147a",
+  "name": "post",
+  "historyId": "a05f9be96cdb7a6bf9ddef879bad760a:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Argument [0]",
+          "value": "{\"method\":\"POST\",\"url\":\"https://jsonplaceholder.typicode.com/posts\",\"body\":{\"title\":\"post call\",\"body\":\"call\",\"userID\":1}}"
+        }
+      ],
+      "start": 1730971086784,
+      "name": "Command \"request\"",
+      "stop": 1730971086764
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "status" }],
+      "start": 1730971086784,
+      "name": "Command \"its\"",
+      "stop": 1730971086776
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cypress" },
+    { "name": "parentSuite", "value": "http" },
+    { "name": "host", "value": "ASCINLAP60851" },
+    { "name": "thread", "value": "pid-40236-worker-main" },
+    { "name": "package", "value": "cypress.e2e.response.cy.js" }
+  ],
+  "links": [],
+  "start": 1730971083390,
+  "fullName": "cypress/e2e/response.cy.js#http post",
+  "testCaseId": "a05f9be96cdb7a6bf9ddef879bad760a",
+  "stop": 1730971086777
+}

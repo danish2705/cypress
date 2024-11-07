@@ -1,0 +1,91 @@
+{
+  "uuid": "a34fff9c-7e61-4cf6-b123-8024420c40b3",
+  "name": "Link Testing - Courses",
+  "historyId": "6dd8dee0e824813b7f38cfb611210d1a:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "Courses" }],
+      "start": 1730970965773,
+      "name": "Command \"contains\"",
+      "stop": 1730970964003
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1730970965773,
+      "name": "Command \"click\"",
+      "stop": 1730970964094
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "1000" }],
+      "start": 1730970965773,
+      "name": "Command \"wait\"",
+      "stop": 1730970965113
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1730970965773,
+      "name": "Command \"url\"",
+      "stop": 1730970965126
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "back" }],
+      "start": 1730970965773,
+      "name": "Command \"go\"",
+      "stop": 1730970965230
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "500" }],
+      "start": 1730970965773,
+      "name": "Command \"wait\"",
+      "stop": 1730970965746
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cypress" },
+    { "name": "parentSuite", "value": "template spec" },
+    { "name": "host", "value": "ASCINLAP60851" },
+    { "name": "thread", "value": "pid-40236-worker-main" },
+    { "name": "package", "value": "cypress.e2e.asser3.cy.js" }
+  ],
+  "links": [],
+  "start": 1730970959267,
+  "fullName": "cypress/e2e/asser3.cy.js#template spec Link Testing - Courses",
+  "testCaseId": "6dd8dee0e824813b7f38cfb611210d1a",
+  "stop": 1730970965747
+}

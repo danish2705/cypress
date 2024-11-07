@@ -1,0 +1,140 @@
+{
+  "uuid": "a20c9b31-28eb-4d0c-a6bb-6b81c5fb74c0",
+  "name": "data driven testing",
+  "historyId": "0add426474d09a68932b5f6bfce7548c:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Argument [0]",
+          "value": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+        }
+      ],
+      "start": 1730971044910,
+      "name": "Command \"visit\"",
+      "stop": 1730971040780
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "orangeHrm" }],
+      "start": 1730971044910,
+      "name": "Command \"fixture\"",
+      "stop": 1730971040791
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "input[placeholder='Username']" }
+      ],
+      "start": 1730971044910,
+      "name": "Command \"get\"",
+      "stop": 1730971041470
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "Admin" }],
+      "start": 1730971044910,
+      "name": "Command \"type\"",
+      "stop": 1730971041602
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "input[placeholder='Password']" }
+      ],
+      "start": 1730971044910,
+      "name": "Command \"get\"",
+      "stop": 1730971041611
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "admin123" }],
+      "start": 1730971044910,
+      "name": "Command \"type\"",
+      "stop": 1730971041866
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "button[type='submit']" }
+      ],
+      "start": 1730971044910,
+      "name": "Command \"get\"",
+      "stop": 1730971041871
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1730971044910,
+      "name": "Command \"click\"",
+      "stop": 1730971041952
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Argument [0]",
+          "value": ":nth-child(2) > .oxd-main-menu-item > .oxd-text"
+        }
+      ],
+      "start": 1730971044910,
+      "name": "Command \"get\"",
+      "stop": 1730971043967
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cypress" },
+    { "name": "parentSuite", "value": "tempelate spec" },
+    { "name": "host", "value": "ASCINLAP60851" },
+    { "name": "thread", "value": "pid-40236-worker-main" },
+    { "name": "package", "value": "cypress.e2e.fixtures.cy.js" }
+  ],
+  "links": [],
+  "start": 1730971038193,
+  "fullName": "cypress/e2e/fixtures.cy.js#tempelate spec data driven testing",
+  "testCaseId": "0add426474d09a68932b5f6bfce7548c",
+  "stop": 1730971043968
+}

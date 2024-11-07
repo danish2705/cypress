@@ -1,0 +1,91 @@
+{
+  "uuid": "5b73025a-7a2c-419e-a505-7ae73357e4bd",
+  "name": "Link Testing - Blog",
+  "historyId": "71f378743bbc3bc1981df684d60dea4e:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "Blog" }],
+      "start": 1730970968465,
+      "name": "Command \"contains\"",
+      "stop": 1730970966230
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1730970968465,
+      "name": "Command \"click\"",
+      "stop": 1730970966308
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "1000" }],
+      "start": 1730970968465,
+      "name": "Command \"wait\"",
+      "stop": 1730970967526
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1730970968465,
+      "name": "Command \"url\"",
+      "stop": 1730970967530
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "back" }],
+      "start": 1730970968465,
+      "name": "Command \"go\"",
+      "stop": 1730970967946
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "500" }],
+      "start": 1730970968465,
+      "name": "Command \"wait\"",
+      "stop": 1730970968449
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cypress" },
+    { "name": "parentSuite", "value": "template spec" },
+    { "name": "host", "value": "ASCINLAP60851" },
+    { "name": "thread", "value": "pid-40236-worker-main" },
+    { "name": "package", "value": "cypress.e2e.asser3.cy.js" }
+  ],
+  "links": [],
+  "start": 1730970965794,
+  "fullName": "cypress/e2e/asser3.cy.js#template spec Link Testing - Blog",
+  "testCaseId": "71f378743bbc3bc1981df684d60dea4e",
+  "stop": 1730970968445
+}

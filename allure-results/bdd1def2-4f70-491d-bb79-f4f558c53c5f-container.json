@@ -1,0 +1,36 @@
+{
+  "uuid": "bdd1def2-4f70-491d-bb79-f4f558c53c5f",
+  "name": "\"before each\" hook",
+  "children": ["a34fff9c-7e61-4cf6-b123-8024420c40b3"],
+  "befores": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Argument [0]",
+              "value": "https://filiphric.com/testing-links-with-cypress"
+            }
+          ],
+          "start": 1730970965773,
+          "name": "Command \"visit\"",
+          "stop": 1730970963982
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1730970959267,
+      "name": "\"before each\" hook",
+      "stop": 1730970963983
+    }
+  ],
+  "afters": []
+}

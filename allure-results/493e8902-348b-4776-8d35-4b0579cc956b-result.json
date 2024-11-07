@@ -1,0 +1,33 @@
+{
+  "uuid": "493e8902-348b-4776-8d35-4b0579cc956b",
+  "name": "action commands",
+  "historyId": "f86a3374d6867263c1951d9c9d3c0004:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "broken",
+  "statusDetails": {
+    "message": "cy.vist is not a function",
+    "trace": "TypeError: cy.vist is not a function\n    at Context.eval (webpack://cy/./cypress/e2e/viewPort.cy.js:3:7)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "fb455bbb-8057-418a-8e7e-f3e23e4aa594-attachment.png",
+      "type": "image/png"
+    }
+  ],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cypress" },
+    { "name": "parentSuite", "value": "template spec" },
+    { "name": "host", "value": "ASCINLAP60851" },
+    { "name": "thread", "value": "pid-40236-worker-main" },
+    { "name": "package", "value": "cypress.e2e.viewPort.cy.js" }
+  ],
+  "links": [],
+  "start": 1730971103065,
+  "fullName": "cypress/e2e/viewPort.cy.js#template spec action commands",
+  "testCaseId": "f86a3374d6867263c1951d9c9d3c0004",
+  "stop": 1730971103253
+}

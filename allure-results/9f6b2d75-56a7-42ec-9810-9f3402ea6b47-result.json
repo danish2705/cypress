@@ -1,0 +1,504 @@
+{
+  "uuid": "9f6b2d75-56a7-42ec-9810-9f3402ea6b47",
+  "name": "actions commands",
+  "historyId": "9d0608727bef070090c888bd9e812743:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Argument [0]",
+          "value": "http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html"
+        }
+      ],
+      "start": 1730971022631,
+      "name": "Command \"visit\"",
+      "stop": 1730971022435
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "#box106" }],
+      "start": 1730971022631,
+      "name": "Command \"get\"",
+      "stop": 1730971022445
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "#box106" },
+        { "name": "Argument [1]", "value": "{\"force\":true}" }
+      ],
+      "start": 1730971022631,
+      "name": "Command \"drag\"",
+      "stop": 1730971022446
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "#box106" }],
+      "start": 1730971022631,
+      "name": "Command \"get\"",
+      "stop": 1730971022449
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "{}" }],
+      "start": 1730971022631,
+      "name": "Command \"wrap\"",
+      "stop": 1730971022454
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "pointerdown" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"which\":1,\"button\":0,\"eventConstructor\":\"PointerEvent\",\"force\":true}"
+        }
+      ],
+      "start": 1730971022631,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022460
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "mousedown" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"which\":1,\"button\":0,\"eventConstructor\":\"MouseEvent\",\"force\":true}"
+        }
+      ],
+      "start": 1730971022631,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022463
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "dragstart" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"dataTransfer\":{},\"eventConstructor\":\"DragEvent\",\"force\":true}"
+        }
+      ],
+      "start": 1730971022631,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022467
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "{}" }],
+      "start": 1730971022631,
+      "name": "Command \"wrap\"",
+      "stop": 1730971022470
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "dragover" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"dataTransfer\":{},\"eventConstructor\":\"DragEvent\",\"force\":true}"
+        }
+      ],
+      "start": 1730971022631,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022473
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "mousemove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"MouseEvent\"}"
+        }
+      ],
+      "start": 1730971022631,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022476
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "pointermove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"PointerEvent\"}"
+        }
+      ],
+      "start": 1730971022631,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022479
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "10" }],
+      "start": 1730971022631,
+      "name": "Command \"wait\"",
+      "stop": 1730971022495
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "{}" }],
+      "start": 1730971022631,
+      "name": "Command \"wrap\"",
+      "stop": 1730971022499
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "dragover" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"dataTransfer\":{},\"eventConstructor\":\"DragEvent\",\"force\":true}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022502
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "mousemove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"MouseEvent\"}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022505
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "pointermove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"PointerEvent\"}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022509
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "10" }],
+      "start": 1730971022632,
+      "name": "Command \"wait\"",
+      "stop": 1730971022520
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "{}" }],
+      "start": 1730971022632,
+      "name": "Command \"wrap\"",
+      "stop": 1730971022527
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "dragover" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"dataTransfer\":{},\"eventConstructor\":\"DragEvent\",\"force\":true}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022530
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "mousemove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"MouseEvent\"}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022534
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "pointermove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"PointerEvent\"}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022538
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "10" }],
+      "start": 1730971022632,
+      "name": "Command \"wait\"",
+      "stop": 1730971022550
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "{}" }],
+      "start": 1730971022632,
+      "name": "Command \"wrap\"",
+      "stop": 1730971022556
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "dragover" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"dataTransfer\":{},\"eventConstructor\":\"DragEvent\",\"force\":true}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022559
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "mousemove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"MouseEvent\"}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022563
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "pointermove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"PointerEvent\"}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022567
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "10" }],
+      "start": 1730971022632,
+      "name": "Command \"wait\"",
+      "stop": 1730971022581
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "{}" }],
+      "start": 1730971022632,
+      "name": "Command \"wrap\"",
+      "stop": 1730971022587
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "dragover" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"dataTransfer\":{},\"eventConstructor\":\"DragEvent\",\"force\":true}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022591
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "mousemove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"MouseEvent\"}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022594
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        { "name": "Argument [0]", "value": "pointermove" },
+        {
+          "name": "Argument [1]",
+          "value": "{\"force\":true,\"eventConstructor\":\"PointerEvent\"}"
+        }
+      ],
+      "start": 1730971022632,
+      "name": "Command \"trigger\"",
+      "stop": 1730971022598
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [{ "name": "Argument [0]", "value": "10" }],
+      "start": 1730971022632,
+      "name": "Command \"wait\"",
+      "stop": 1730971022611
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cypress" },
+    { "name": "parentSuite", "value": "tempelate spec" },
+    { "name": "host", "value": "ASCINLAP60851" },
+    { "name": "thread", "value": "pid-40236-worker-main" },
+    { "name": "package", "value": "cypress.e2e.dragAndDrop.cy.js" }
+  ],
+  "links": [],
+  "start": 1730971019990,
+  "fullName": "cypress/e2e/dragAndDrop.cy.js#tempelate spec actions commands",
+  "testCaseId": "9d0608727bef070090c888bd9e812743",
+  "stop": 1730971022614
+}

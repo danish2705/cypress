@@ -1,0 +1,50 @@
+{
+  "uuid": "ec1681f5-2b6c-4cef-a69a-9ade23f65b7c",
+  "name": "check aeertion",
+  "historyId": "be30d8b73190b6c2a944ed6691bb80b0:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Cypress detected you registered a(n) `beforeEach` hook while a test was running (possibly a hook nested inside another hook). All hooks must be registered before a test begins executing.\n\nMove the `beforeEach` into a suite callback or the global scope.",
+    "trace": "CypressError: Cypress detected you registered a(n) `beforeEach` hook while a test was running (possibly a hook nested inside another hook). All hooks must be registered before a test begins executing.\n\nMove the `beforeEach` into a suite callback or the global scope.\n    at cypressErr (http://localhost:58265/__cypress/runner/cypress_runner.js:75898:18)\n    at Object.errByPath (http://localhost:58265/__cypress/runner/cypress_runner.js:75952:10)\n    at Suite._createHook (http://localhost:58265/__cypress/runner/cypress_runner.js:145477:76)\n    at Suite.beforeEach (http://localhost:58265/__cypress/runner/cypress_runner.js:157232:19)\n    at Suite.<computed> [as beforeEach] (http://localhost:58265/__cypress/runner/cypress_runner.js:145485:23)\n    at beforeEach (http://localhost:58265/__cypress/runner/cypress_runner.js:160666:17)\nFrom Your Spec Code:\n    at Context.eval (webpack://cy/./cypress/e2e/assertion.cy.js:66:4)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Argument [0]",
+          "value": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+        }
+      ],
+      "start": 1730970990231,
+      "name": "Command \"visit\"",
+      "stop": 1730970990113
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "311117d3-d600-4048-a5bd-dd170249e067-attachment.png",
+      "type": "image/png"
+    }
+  ],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cypress" },
+    { "name": "parentSuite", "value": "url" },
+    { "name": "host", "value": "ASCINLAP60851" },
+    { "name": "thread", "value": "pid-40236-worker-main" },
+    { "name": "package", "value": "cypress.e2e.assertion.cy.js" }
+  ],
+  "links": [],
+  "start": 1730970990075,
+  "fullName": "cypress/e2e/assertion.cy.js#url check aeertion",
+  "testCaseId": "be30d8b73190b6c2a944ed6691bb80b0",
+  "stop": 1730970990216
+}
