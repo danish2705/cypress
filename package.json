@@ -138,6 +138,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "cypress-cucumber-preprocessor" : {
+    "nonGlobalStepDefinitions" : true
+  },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.5",
     "@cypress/webpack-preprocessor": "^6.0.2",
