@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2024-11-07T09:16:32.655Z",
-    "end": "2024-11-07T09:16:54.981Z",
-    "duration": 22326,
+    "start": "2024-11-14T09:07:51.423Z",
+    "end": "2024-11-14T09:07:51.687Z",
+    "duration": 264,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,41 +18,41 @@
   },
   "results": [
     {
-      "uuid": "1025b5ed-1b19-45da-83ba-a947961afeb1",
+      "uuid": "5bd559b9-55d4-4894-b0cf-806ebd1b1d7b",
       "title": "",
-      "fullFile": "cypress\\e2e\\checkBox.cy.js",
-      "file": "cypress\\e2e\\checkBox.cy.js",
+      "fullFile": "cypress\\e2e\\assertion.cy.js",
+      "file": "cypress\\e2e\\assertion.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "9e97dd4e-76e3-43e4-a6f0-1a445ed666cc",
-          "title": "checkBox",
+          "uuid": "9912b7d8-a404-4b97-ac38-d32ed2e9ed8a",
+          "title": "url",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "tests checkBox",
-              "fullTitle": "checkBox tests checkBox",
+              "title": "check aeertion",
+              "fullTitle": "url check aeertion",
               "timedOut": null,
-              "duration": 16879,
+              "duration": 153,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.viewport(599, 584);\ncy.visit(\"https://demoqa.com/checkbox\");\ncy.get(\"ol button > svg\").click();\ncy.get(\"#tree-node > ol > li > ol > li:nth-of-type(1) button > svg\").click();\ncy.get(\"li > ol > li:nth-of-type(1) > ol > li:nth-of-type(1) span.rct-checkbox path\").click();\ncy.get(\"li > ol > li:nth-of-type(1) li:nth-of-type(2) label\").click();\ncy.get(\"li > ol > li:nth-of-type(1) li:nth-of-type(2) span.rct-checkbox path\").click();\ncy.get(\"li > ol > li:nth-of-type(1) > ol > li:nth-of-type(1) span.rct-checkbox path\").click();\ncy.get(\"#tree-node > ol > li > span > button > svg\").click();",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\n// cy.url()\n//   .should(\"include\", \"orangehrmlive.com\")\n//   .should(\n//     \"eq\",\n//     \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\n//   )\n//   .should(\"contain\", \"orangehrm\");\n// cy.url()\n//   .should(\"include\", \"orangehrmlive.com\")\n//   .and(\n//     \"eq\",\n//     \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\n//   )\n//   .and(\"contain\", \"orangehrm\")\n//   .and(\"not.contain\", \"orangehrm1\")\n//   .and(\"not.include\", \"orangehrmlive1.com\")\n//   .and(\n//     \"not.eq\",\n//     \"https://opensource-demo1.orangehrmlive.com/web/index.php/auth/login\"\n//   );\n// cy.title()\n//   .should(\"include\", \"Orange\")\n//   .and(\"eq\", \"OrangeHRM\")\n//   .and(\"contain\", \"HRM\");\n// cy.get(\".orangehrm-login-branding > img\").should(\"be.visible\").and(\"exist\");\n// cy.get(\"input[placeholder='Username']\").type(\"Admin\");\n// cy.get(\"input[placeholder='Password']\").type(\"admin123\");\n// cy.get(\"button[type='submit']\").click();\n// let expName = \"xyz\";\n// cy.get(\".oxd-userdropdown-name\").then((x) => {\n//   let actName = x.text();\n//   expect(actName).to.equal(expName);\n//   expect(actName).to.not.equal(expName);\n//   assert.equal(actName, expName);\n// });\n// cy.visit(\n//   \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\n// );\n// cy.get(\"input[placeholder='Username']\").type(\"Admin1\");\n// cy.get(\"input[placeholder='Username']\").should(\"have.value\", \"Admin1\");\n// cy.get(\"input[placeholder='Username']\")\n//   .clear()\n//   .type(\"Admin\")\n//   .should(\"have.value\", \"Admin\");\n// cy.visit(\n//   \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\n// );\n// cy.get(\".orangehrm-login-form\").within(() => {\n//   cy.get(\"input[placeholder='Username']\").should(\n//     \"have.attr\",\n//     \"placeholder\",\n//     \"Username\"\n//   );\n//   cy.get(\"input[placeholder='Password']\").should(\n//     \"have.attr\",\n//     \"placeholder\",\n//     \"Password\"\n//   );\n// });\nbeforeEach(() => {});\ncy.vist(\"https://filiphric.com/testing-links-with-cypress\");\ncy.contains(\"blog\").click();\ncy.go(\"back\");",
               "err": {
-                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error",
-                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error",
+                "message": "CypressError: Cypress detected you registered a(n) `beforeEach` hook while a test was running (possibly a hook nested inside another hook). All hooks must be registered before a test begins executing.\n\nMove the `beforeEach` into a suite callback or the global scope.",
+                "estack": "CypressError: Cypress detected you registered a(n) `beforeEach` hook while a test was running (possibly a hook nested inside another hook). All hooks must be registered before a test begins executing.\n\nMove the `beforeEach` into a suite callback or the global scope.\n    at cypressErr (http://localhost:60473/__cypress/runner/cypress_runner.js:75898:18)\n    at Object.errByPath (http://localhost:60473/__cypress/runner/cypress_runner.js:75952:10)\n    at Suite._createHook (http://localhost:60473/__cypress/runner/cypress_runner.js:145477:76)\n    at Suite.beforeEach (http://localhost:60473/__cypress/runner/cypress_runner.js:157232:19)\n    at Suite.<computed> [as beforeEach] (http://localhost:60473/__cypress/runner/cypress_runner.js:145485:23)\n    at beforeEach (http://localhost:60473/__cypress/runner/cypress_runner.js:160666:17)\nFrom Your Spec Code:\n    at Context.eval (webpack://cy/./cypress/e2e/assertion.cy.js:66:4)",
                 "diff": null
               },
-              "uuid": "8256698f-dbad-4318-871d-a041145bdcc6",
-              "parentUUID": "9e97dd4e-76e3-43e4-a6f0-1a445ed666cc",
+              "uuid": "72ee8afc-d353-4bd6-9b0d-59af155d0fe9",
+              "parentUUID": "9912b7d8-a404-4b97-ac38-d32ed2e9ed8a",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "8256698f-dbad-4318-871d-a041145bdcc6"
+            "72ee8afc-d353-4bd6-9b0d-59af155d0fe9"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 16879,
+          "duration": 153,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

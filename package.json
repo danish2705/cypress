@@ -133,7 +133,8 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dashboard-run" : "npx cypress run --record --key 4348bce8-e9ee-4c3d-977a-378fa7d975f8"
   },
   "author": "",
   "license": "ISC",

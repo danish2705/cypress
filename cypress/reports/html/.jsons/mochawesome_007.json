@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 0,
+    "tests": 2,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-11-07T09:17:26.889Z",
-    "end": "2024-11-07T09:17:38.371Z",
-    "duration": 11482,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 2,
+    "start": "2024-11-14T09:08:48.391Z",
+    "end": "2024-11-14T09:09:01.087Z",
+    "duration": 12696,
+    "testsRegistered": 2,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,61 +18,69 @@
   },
   "results": [
     {
-      "uuid": "6d75a350-ee1d-42bb-8dd5-4f39acf6316c",
+      "uuid": "30d861eb-ac69-4da6-9590-06ced950639e",
       "title": "",
-      "fullFile": "cypress\\e2e\\loginWithPom.cy.js",
-      "file": "cypress\\e2e\\loginWithPom.cy.js",
+      "fullFile": "cypress\\e2e\\dsa.cy.js",
+      "file": "cypress\\e2e\\dsa.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [],
-      "suites": [
+      "tests": [
         {
-          "uuid": "f1c8b038-fde3-4025-9b92-bf95dbfabcf4",
-          "title": "tempelate spec",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "POM TC login",
-              "fullTitle": "tempelate spec POM TC login",
-              "timedOut": null,
-              "duration": 8175,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\nconst ln = new _loginPage.default();\nln.setUserName(\"Admin\");\nln.setPassword(\"admin123\");\nln.clickSubmit();\nln.verifyLogin();",
-              "err": {},
-              "uuid": "4ad68845-b6d7-4aa3-846e-224d837bba2f",
-              "parentUUID": "f1c8b038-fde3-4025-9b92-bf95dbfabcf4",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "4ad68845-b6d7-4aa3-846e-224d837bba2f"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 8175,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
+          "title": "asd",
+          "fullTitle": "asd",
+          "timedOut": null,
+          "duration": 6867,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\n//fill in the login form and submit\ncy.get(\"input[placeholder='Username']\").type(\"Admin\");\ncy.get(\"input[placeholder='Password']\").type(\"admin123\");\ncy.get(\"button[type='submit']\").click();",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[placeholder='Username']`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[placeholder='Username']`, but never found it.\n    at Context.eval (webpack://cy/./cypress/e2e/dsa.cy.js:6:5)",
+            "diff": null
+          },
+          "uuid": "681ff2ca-e74d-485a-8890-b5e8afbc8de8",
+          "parentUUID": "30d861eb-ac69-4da6-9590-06ced950639e",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "logo",
+          "fullTitle": "logo",
+          "timedOut": null,
+          "duration": 143,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.xpath(\"//img[@alt='client brand banner']\").click();\ncy.url(\"eq\", \"https://www.orangehrm.com/\");",
+          "err": {
+            "message": "TypeError: cy.xpath is not a function",
+            "estack": "TypeError: cy.xpath is not a function\n    at Context.eval (webpack://cy/./cypress/e2e/dsa.cy.js:11:5)",
+            "diff": null
+          },
+          "uuid": "87024ec7-8a49-40e9-90ee-84828a206746",
+          "parentUUID": "30d861eb-ac69-4da6-9590-06ced950639e",
+          "isHook": false,
+          "skipped": false
         }
       ],
+      "suites": [],
       "passes": [],
-      "failures": [],
+      "failures": [
+        "681ff2ca-e74d-485a-8890-b5e8afbc8de8",
+        "87024ec7-8a49-40e9-90ee-84828a206746"
+      ],
       "pending": [],
       "skipped": [],
-      "duration": 0,
+      "duration": 7010,
       "root": true,
-      "rootEmpty": true,
+      "rootEmpty": false,
       "_timeout": 2000
     }
   ],

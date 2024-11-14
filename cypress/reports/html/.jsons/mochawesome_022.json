@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-14T09:11:01.047Z",
+    "end": "2024-11-14T09:11:01.975Z",
+    "duration": 928,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1dc99d15-f999-4f50-a7c6-738878e9ceb3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiTesting\\apiPostTest.cy.js",
+      "file": "cypress\\e2e\\apiTesting\\apiPostTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d440cd8c-2089-462b-ba8b-aad4233928aa",
+          "title": "HTTP request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "post call",
+              "fullTitle": "HTTP request post call",
+              "timedOut": null,
+              "duration": 849,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"POST\",\n  url: \"https://gorest.co.in/public/v2/users\",\n  headers: {\n    authorization: \"Bearer f53d40996ec5d5ec1384e85d30575a8dc47941f7cd638580b0247b9b611f038e\"\n  },\n  body: {\n    name: \"hex\",\n    email: \"hex@gmail.com\",\n    gender: \"male\",\n    status: \"active\"\n  }\n}).then(res => {\n  cy.log(JSON.stringify(res));\n  expect(res.status).to.eq(201);\n  expect(res.body).has.property(\"email\", \"hex@gmail.com\");\n  expect(res.body).has.property(\"status\", \"active\");\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttps://gorest.co.in/public/v2/users\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://gorest.co.in/public/v2/users\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"authorization\": \"Bearer f53d40996ec5d5ec1384e85d30575a8dc47941f7cd638580b0247b9b611f038e\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.15.1 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 72\n}\nBody: {\"name\":\"hex\",\"email\":\"hex@gmail.com\",\"gender\":\"male\",\"status\":\"active\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Thu, 14 Nov 2024 09:11:01 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"54\",\n  \"connection\": \"keep-alive\",\n  \"cache-control\": \"no-cache\",\n  \"referrer-policy\": \"strict-origin-when-cross-origin\",\n  \"vary\": \"Origin\",\n  \"x-content-type-options\": \"nosniff\",\n  \"x-download-options\": \"noopen\",\n  \"x-frame-options\": \"SAMEORIGIN\",\n  \"x-permitted-cross-domain-policies\": \"none\",\n  \"x-ratelimit-limit\": \"90\",\n  \"x-ratelimit-remaining\": \"89\",\n  \"x-ratelimit-reset\": \"1\",\n  \"x-request-id\": \"cb39b267-d250-4d7f-81d7-bea1204d1348\",\n  \"x-runtime\": \"0.168448\",\n  \"x-xss-protection\": \"0\",\n  \"cf-cache-status\": \"DYNAMIC\",\n  \"report-to\": \"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v4?s=3uiRAOMHeO%2B8B62UJcyhyNSjD%2Fm%2Bl63T6lm2UAJDKF231kzMgATmVuEb%2Ba8K0fDDna7TNdxYOA5%2Bad9VLQoaf5xF4kyWNPo42IW25ZC4S1RXFBC%2BsYE0cjki9JYbT4U%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"nel\": \"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"server\": \"cloudflare\",\n  \"cf-ray\": \"8e25df2b0a199e29-SIN\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\",\n  \"server-timing\": \"cfL4;desc=\\\"?proto=TCP&rtt=84889&sent=37&recv=33&lost=0&retrans=0&sent_bytes=17940&recv_bytes=6742&delivery_rate=131191&cwnd=257&unsent_bytes=0&cid=4e3276225613dbfb&ts=88696&x=0\\\"\"\n}\nBody: [\n  {\n    \"field\": \"email\",\n    \"message\": \"has already been taken\"\n  }\n]\n\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://gorest.co.in/public/v2/users\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://gorest.co.in/public/v2/users\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"authorization\": \"Bearer f53d40996ec5d5ec1384e85d30575a8dc47941f7cd638580b0247b9b611f038e\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.15.1 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 72\n}\nBody: {\"name\":\"hex\",\"email\":\"hex@gmail.com\",\"gender\":\"male\",\"status\":\"active\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Thu, 14 Nov 2024 09:11:01 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"54\",\n  \"connection\": \"keep-alive\",\n  \"cache-control\": \"no-cache\",\n  \"referrer-policy\": \"strict-origin-when-cross-origin\",\n  \"vary\": \"Origin\",\n  \"x-content-type-options\": \"nosniff\",\n  \"x-download-options\": \"noopen\",\n  \"x-frame-options\": \"SAMEORIGIN\",\n  \"x-permitted-cross-domain-policies\": \"none\",\n  \"x-ratelimit-limit\": \"90\",\n  \"x-ratelimit-remaining\": \"89\",\n  \"x-ratelimit-reset\": \"1\",\n  \"x-request-id\": \"cb39b267-d250-4d7f-81d7-bea1204d1348\",\n  \"x-runtime\": \"0.168448\",\n  \"x-xss-protection\": \"0\",\n  \"cf-cache-status\": \"DYNAMIC\",\n  \"report-to\": \"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v4?s=3uiRAOMHeO%2B8B62UJcyhyNSjD%2Fm%2Bl63T6lm2UAJDKF231kzMgATmVuEb%2Ba8K0fDDna7TNdxYOA5%2Bad9VLQoaf5xF4kyWNPo42IW25ZC4S1RXFBC%2BsYE0cjki9JYbT4U%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"nel\": \"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"server\": \"cloudflare\",\n  \"cf-ray\": \"8e25df2b0a199e29-SIN\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\",\n  \"server-timing\": \"cfL4;desc=\\\"?proto=TCP&rtt=84889&sent=37&recv=33&lost=0&retrans=0&sent_bytes=17940&recv_bytes=6742&delivery_rate=131191&cwnd=257&unsent_bytes=0&cid=4e3276225613dbfb&ts=88696&x=0\\\"\"\n}\nBody: [\n  {\n    \"field\": \"email\",\n    \"message\": \"has already been taken\"\n  }\n]\n\n\nhttps://on.cypress.io/request\n    at <unknown> (http://localhost:60473/__cypress/runner/cypress_runner.js:132719:72)\n    at tryCatcher (http://localhost:60473/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:60473/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:60473/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:60473/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:60473/__cypress/runner/cypress_runner.js:1701:18)\n    at _drainQueueStep (http://localhost:60473/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:60473/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:60473/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:60473/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cy/./cypress/e2e/apiTesting/apiPostTest.cy.js:5:7)",
+                "diff": null
+              },
+              "uuid": "463f7cf0-c938-4f37-81b2-2b445ea0a23d",
+              "parentUUID": "d440cd8c-2089-462b-ba8b-aad4233928aa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "463f7cf0-c938-4f37-81b2-2b445ea0a23d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 849,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
