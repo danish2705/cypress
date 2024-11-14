@@ -85,6 +85,7 @@
     "mime-types": "^2.1.35",
     "mimic-fn": "^2.1.0",
     "ms": "^2.1.3",
+    "npm": "^10.9.0",
     "npm-run-path": "^4.0.1",
     "object-inspect": "^1.13.2",
     "once": "^1.4.0",
@@ -134,13 +135,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress-dashboard-run" : "npx cypress run --record --key 4348bce8-e9ee-4c3d-977a-378fa7d975f8"
+    "cypress-dashboard-run": "npx cypress run --record --key 4348bce8-e9ee-4c3d-977a-378fa7d975f8"
   },
   "author": "",
   "license": "ISC",
   "description": "",
-  "cypress-cucumber-preprocessor" : {
-    "nonGlobalStepDefinitions" : true
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.5",
