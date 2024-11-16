@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-16T06:31:38.295Z",
+    "end": "2024-11-16T06:31:50.490Z",
+    "duration": 12195,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "14a948ba-246a-4a2a-98a0-413f05dd4758",
+      "title": "",
+      "fullFile": "cypress\\e2e\\gmail.cy.js",
+      "file": "cypress\\e2e\\gmail.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2dd08fd2-ca04-4c19-b8c2-dcf5c788da94",
+          "title": "demo testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "hover testing",
+              "fullTitle": "demo testing hover testing",
+              "timedOut": null,
+              "duration": 7094,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://practice.expandtesting.com/\");\ncy.xpath(\"//a[normalize-space()='Hovers']\").click();\n//user1\ncy.xpath(\"//div[@class='container']//div[1]//img[1]\").realHover();\ncy.contains(\"name: user1\").should(\"be.visible\");\ncy.get(\"a[href='/users/1']\").should(\"be.visible\").and(\"have.attr\", \"href\", \"/users/1\");\n//user2\ncy.xpath(\"//div[@class='page-layout']//div[2]//img[1]\").realHover();\ncy.contains(\"name: user2\").should(\"be.visible\");\ncy.get(\"a[href='/users/2']\").should(\"be.visible\").and(\"have.attr\", \"href\", \"/users/2\");\n//user3\ncy.xpath(\"//div[3]//img[1]\").realHover();\ncy.contains(\"name: user3\").should(\"be.visible\");\ncy.get(\"a[href='/users/3']\").should(\"be.visible\").and(\"have.attr\", \"href\", \"/users/3\");",
+              "err": {},
+              "uuid": "7dfbb16c-ee57-4542-9c33-414d11f1cc25",
+              "parentUUID": "2dd08fd2-ca04-4c19-b8c2-dcf5c788da94",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7dfbb16c-ee57-4542-9c33-414d11f1cc25"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7094,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-16T06:26:10.990Z",
+    "end": "2024-11-16T06:26:43.741Z",
+    "duration": 32751,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9eed66b0-1696-40ea-9b79-9df09b633bac",
+      "title": "",
+      "fullFile": "cypress\\e2e\\asser3.cy.js",
+      "file": "cypress\\e2e\\asser3.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2c8cf83e-7760-4712-9cb5-61bba798e684",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Link Testing - Courses",
+              "fullTitle": "template spec Link Testing - Courses",
+              "timedOut": null,
+              "duration": 3793,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Courses\").should(\"be.visible\").click();\ncy.wait(1000);\ncy.url().should(\"eq\", \"https://filiphric.com/courses\");\ncy.go(\"back\");\ncy.wait(500);",
+              "err": {},
+              "uuid": "8cb00eb0-5569-450e-aedb-0a6df6915a45",
+              "parentUUID": "2c8cf83e-7760-4712-9cb5-61bba798e684",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Link Testing - Blog",
+              "fullTitle": "template spec Link Testing - Blog",
+              "timedOut": null,
+              "duration": 2898,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Blog\").should(\"be.visible\").click();\ncy.wait(1000);\ncy.url().should(\"eq\", \"https://filiphric.com/blog\");\ncy.go(\"back\");\ncy.wait(500);",
+              "err": {},
+              "uuid": "ad7dd47c-9ed8-412e-a5cd-5926b4e4bd03",
+              "parentUUID": "2c8cf83e-7760-4712-9cb5-61bba798e684",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Link Testing - Workshops",
+              "fullTitle": "template spec Link Testing - Workshops",
+              "timedOut": null,
+              "duration": 2662,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Workshops\").should(\"be.visible\").click();\ncy.wait(1000);\ncy.url().should(\"eq\", \"https://filiphric.com/workshops\");\ncy.go(\"back\");\ncy.wait(500);",
+              "err": {},
+              "uuid": "f45c3794-3fc9-4be5-9964-fd859d478b5c",
+              "parentUUID": "2c8cf83e-7760-4712-9cb5-61bba798e684",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Link Testing - Community",
+              "fullTitle": "template spec Link Testing - Community",
+              "timedOut": null,
+              "duration": 13603,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Community\").should(\"be.visible\").click();\ncy.wait(1000);\ncy.url().should(\"eq\", \"https://discord.com/invite/3MdvPfT\");\ncy.go(\"back\");\ncy.wait(500);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '' to equal 'https://discord.com/invite/3MdvPfT'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '' to equal 'https://discord.com/invite/3MdvPfT'\n    at Context.eval (webpack://cy/./cypress/e2e/asser3.cy.js:65:13)",
+                "diff": "+ 'https://discord.com/invite/3MdvPfT'\n"
+              },
+              "uuid": "50cb56e9-5e70-43ab-bdc3-e94883c0fa57",
+              "parentUUID": "2c8cf83e-7760-4712-9cb5-61bba798e684",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Link Testing - About",
+              "fullTitle": "template spec Link Testing - About",
+              "timedOut": null,
+              "duration": 5032,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"About\").should(\"be.visible\").click();\ncy.wait(1000);\ncy.url().should(\"eq\", \"https://filiphric.com/about\");\ncy.go(\"back\");\ncy.wait(500);",
+              "err": {},
+              "uuid": "072b2c3e-aa1e-4448-9239-ec0ae7d60350",
+              "parentUUID": "2c8cf83e-7760-4712-9cb5-61bba798e684",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8cb00eb0-5569-450e-aedb-0a6df6915a45",
+            "ad7dd47c-9ed8-412e-a5cd-5926b4e4bd03",
+            "f45c3794-3fc9-4be5-9964-fd859d478b5c",
+            "072b2c3e-aa1e-4448-9239-ec0ae7d60350"
+          ],
+          "failures": [
+            "50cb56e9-5e70-43ab-bdc3-e94883c0fa57"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 27988,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

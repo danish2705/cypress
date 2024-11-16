@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-16T06:33:00.333Z",
+    "end": "2024-11-16T06:33:00.702Z",
+    "duration": 369,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3fcdd969-0fcf-4509-9434-e4ba399836b7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\viewPort.cy.js",
+      "file": "cypress\\e2e\\viewPort.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e4321cf2-2bae-406a-b9ba-87ff68b6f2e7",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "action commands",
+              "fullTitle": "template spec action commands",
+              "timedOut": null,
+              "duration": 235,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.vist(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.viewport(\"macbook-15\");\ncy.wait(2000);\ncy.viewport(\"macbook-13\");\ncy.wait(1000);",
+              "err": {
+                "message": "TypeError: cy.vist is not a function",
+                "estack": "TypeError: cy.vist is not a function\n    at Context.eval (webpack://cy/./cypress/e2e/viewPort.cy.js:3:7)",
+                "diff": null
+              },
+              "uuid": "47106696-bce7-4915-a116-f48dbbeed827",
+              "parentUUID": "e4321cf2-2bae-406a-b9ba-87ff68b6f2e7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "47106696-bce7-4915-a116-f48dbbeed827"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 235,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

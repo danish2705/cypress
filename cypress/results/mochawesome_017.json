@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-16T06:31:27.400Z",
+    "end": "2024-11-16T06:31:34.445Z",
+    "duration": 7045,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "99ee0eda-cb38-49f0-be3c-1103d94a08be",
+      "title": "",
+      "fullFile": "cypress\\e2e\\fixtures.cy.js",
+      "file": "cypress\\e2e\\fixtures.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ce1c4f60-8945-41d8-a356-7c02d02acf33",
+          "title": "tempelate spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "data driven testing",
+              "fullTitle": "tempelate spec data driven testing",
+              "timedOut": null,
+              "duration": 3920,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.fixture(\"orangeHrm\").then(data => {\n  cy.get(\"input[placeholder='Username']\").type(data.username);\n  cy.get(\"input[placeholder='Password']\").type(data.password);\n  cy.get(\"button[type='submit']\").click();\n  cy.get(\":nth-child(2) > .oxd-main-menu-item > .oxd-text\").should(\"have.text\", data.expected);\n});",
+              "err": {
+                "message": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\orangeHrm\n    > cypress\\fixtures\\orangeHrm.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.",
+                "estack": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\orangeHrm\n    > cypress\\fixtures\\orangeHrm.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n    at Object.<anonymous> (<embedded>:2744:115716)\n    at Object.tryCatcher (C:\\Users\\danish.meraj\\AppData\\Local\\Cypress\\Cache\\13.15.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\danish.meraj\\AppData\\Local\\Cypress\\Cache\\13.15.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (C:\\Users\\danish.meraj\\AppData\\Local\\Cypress\\Cache\\13.15.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (C:\\Users\\danish.meraj\\AppData\\Local\\Cypress\\Cache\\13.15.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (C:\\Users\\danish.meraj\\AppData\\Local\\Cypress\\Cache\\13.15.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:694:18)\n    at Promise._fulfill (C:\\Users\\danish.meraj\\AppData\\Local\\Cypress\\Cache\\13.15.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at <unknown> (C:\\Users\\danish.meraj\\AppData\\Local\\Cypress\\Cache\\13.15.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\nodeback.js:42:21)\n    at s (<embedded>:227:106085)\n    at T.<anonymous> (<embedded>:2744:105420)\n    at T.emit (node:events:514:28)\n    at T._finish (<embedded>:2744:106287)\n    at i (<embedded>:2744:105683)\n    at T._processSimple2 (<embedded>:2744:111444)\n    at <unknown> (<embedded>:2744:111297)\n    at T._stat2 (<embedded>:2744:112362)\n    at <unknown> (<embedded>:2744:112209)\n    at s (<embedded>:815:24236)\n    at s (<embedded>:227:106085)\n    at r (<embedded>:3004:13485)\n    at FSReqCallback.oncomplete (node:fs:210:21)",
+                "diff": null
+              },
+              "uuid": "1474fa3d-7c1c-4a89-ab1b-a9e47ece5c47",
+              "parentUUID": "ce1c4f60-8945-41d8-a356-7c02d02acf33",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1474fa3d-7c1c-4a89-ab1b-a9e47ece5c47"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3920,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
