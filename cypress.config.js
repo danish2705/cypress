@@ -2,6 +2,12 @@ const { defineConfig } = require("cypress");
 const { allureCypress } = require("allure-cypress/reporter");
 module.exports = defineConfig({
   reporter: "cypress-mochawesome-reporter",
+  reporterOptions: {
+    reportDir: "cypress/results",
+    overwrite: false,
+    html: true,
+    json: true,
+  },
   e2e: {
     projectId: "2atufa",
     setupNodeEvents(on, config) {
