@@ -1,25 +1,27 @@
-const { defineConfig } = require("cypress");
-const { allureCypress } = require("allure-cypress/reporter");
-module.exports = defineConfig({
-  reporter: "cypress-mochawesome-reporter",
-  reporterOptions: {
-    reportDir: "cypress/results",
-    overwrite: false,
-    html: true,
-    json: true,
-  },
-  e2e: {
-    projectId: "2atufa",
-    setupNodeEvents(on, config) {
-      require("cypress-mochawesome-reporter/plugin")(on);
-      // implement node event listeners here
-      allureCypress(on, config);
-      return config;
-    },
-  },
-});
+// const { defineConfig } = require("cypress");
+// const { allureCypress } = require("allure-cypress/reporter");
+// module.exports = defineConfig({
+//   reporter: "cypress-mochawesome-reporter",
+//   reporterOptions: {
+//     reportDir: "cypress/results",
+//     overwrite: false,
+//     html: true,
+//     json: true,
+//   },
+//   e2e: {
+//     projectId: "2atufa",
+//     setupNodeEvents(on, config) {
+//       require("cypress-mochawesome-reporter/plugin")(on);
+//       // implement node event listeners here
+//       allureCypress(on, config);
+//       return config;
+//     },
+//   },
+// });
 
 // cypress.config.js;
+
+//cucumber
 // const { defineConfig } = require("cypress");
 // const webpackPreprocessor = require("@cypress/webpack-preprocessor");
 // const {
@@ -99,3 +101,25 @@ module.exports = defineConfig({
 //     stepDefinitions: "cypress/e2e/",
 //   },
 // });
+
+//jenkins
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  reporter: "cypress-mochawesome-reporter",
+  reporterOptions: {
+    reportDir: "cypress/results",
+    overwrite: false,
+    html: true, // Generate HTML report
+    json: false, // No need for JSON if you only want XML and HTML
+    junit: true, // Enable JUnit XML generation
+  },
+  e2e: {
+    projectId: "2atufa",
+    setupNodeEvents(on, config) {
+      // Set up Mochawesome plugin for reporting
+      require("cypress-mochawesome-reporter/plugin")(on);
+      return config;
+    },
+  },
+});
