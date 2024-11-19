@@ -141,7 +141,8 @@
   "license": "ISC",
   "description": "",
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "./e2e/integration"
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.5",
