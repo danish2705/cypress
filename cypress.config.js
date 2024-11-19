@@ -106,19 +106,24 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  reporter: "cypress-mochawesome-reporter",
+  reporter: "cypress-multi-reporters", // Allows multiple reporters
   reporterOptions: {
-    reportDir: "cypress/results",
-    overwrite: false,
-    html: true, // Generate HTML report
-    json: false, // No need for JSON if you only want XML and HTML
-    junit: true, // Enable JUnit XML generation
+    reporterEnabled: "cypress-mochawesome-reporter, mocha-junit-reporter", // Use both reporters
+    cypressMochawesomeReporterReporterOptions: {
+      reportDir: "cypress/results",
+      overwrite: false,
+      html: true,
+      json: true,
+    },
+    mochaJunitReporterReporterOptions: {
+      mochaFile: "cypress/results/junit-[hash].xml", // JUnit XML files for Jenkins
+      toConsole: true, // Optional: Print results in the console
+    },
   },
   e2e: {
     projectId: "2atufa",
     setupNodeEvents(on, config) {
-      // Set up Mochawesome plugin for reporting
-      require("cypress-mochawesome-reporter/plugin")(on);
+      require("cypress-mochawesome-reporter/plugin")(on); // Mochawesome setup
       return config;
     },
   },
